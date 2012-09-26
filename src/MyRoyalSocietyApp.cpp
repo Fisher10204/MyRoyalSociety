@@ -12,6 +12,10 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
+
+//It may be a good idea to separate the classes and declarations into separtate .h and .cpp files
+
+//Good variable names, makes it easy to understand
 class RECTANGLE{
 public:
 	RECTANGLE(int colorRed, int colorGreen, int colorBlue, int xLoc, int yLoc, int heightGiven, int widthGiven);
@@ -63,6 +67,9 @@ Node::Node(RECTANGLE* rect_){
 	next_=this;
 	isSentinal=false;
 }
+
+//The boolean variable isFirst is slightly confusing
+
 Node::Node(bool isFirst)
 {
 	next_=this;
